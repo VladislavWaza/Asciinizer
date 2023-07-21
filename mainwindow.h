@@ -17,8 +17,12 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void radioButtonClicked();
 
 private:
+    int maxLabelHeight;
+    int maxLabelWidth;
+    QImage image;
     Ui::MainWindow *ui;
     void asciinize(QImage& image);
 };
